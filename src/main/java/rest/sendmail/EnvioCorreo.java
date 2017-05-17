@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EnvioCorreo {
    private static final String SMTP_HOST_NAME = "smtp.sendgrid.net";
-   private static final String SMTP_AUTH_USER = "azure_ae3cd8d0a6a88b43e07f2f3bd511c59e@azure.com";
-   private static final String SMTP_AUTH_PWD = "P@ssw0rd";
 
    @RequestMapping("/{correo}/{usuario}")
    public void SendMail(@PathVariable String correo, @PathVariable String usuario) throws Exception
